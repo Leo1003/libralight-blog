@@ -23,4 +23,8 @@ jobs:
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key
           chmod 600 ~/.ssh/deploy_key
           rsync --rsh "ssh -i ~/.ssh/deploy_key" --exclude='/.*' -zrlt --delete artifacts/ $REMOTE_USER@$REMOTE_HOST:$REMOTE_TARGET
+      - name: Cleanup
+        if: always()
+        run: |
+          rm -f ~/.ssh/deploy_key
 
