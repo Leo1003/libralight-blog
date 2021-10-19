@@ -10,13 +10,15 @@ jobs:
         env:
           BUILD_ONLY: true
       - name: Deploy blog
-        uses: easingthemes/ssh-deploy@v2.2.11
         env:
           SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
-          ARGS: "-rlt --delete"
-          SOURCE: "artifacts/"
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: ${{ secrets.REMOTE_TARGET }}
-          EXCLUDE: "/.*"
+          REMOTE_TARGET: ${{ secrets.REMOTE_TARGET }}
+        run: |
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          rsync --rsh "ssh -i ~/.ssh/deploy_key" --exclude='/.*' -zrlt --delete artifacts/ $REMOTE_USER@$REMOTE_HOST:$REMOTE_TARGET
 
