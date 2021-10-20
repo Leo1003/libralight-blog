@@ -9,7 +9,7 @@ description = "Coffee x Codes x ComputerEngineer"
 default_language = "zh_tw"
 
 # The site theme to use.
-theme = "zola-clean-blog"
+theme = "papaya"
 
 # For overriding the default output directory `public`, set it to another value (e.g.: "docs")
 output_dir = "artifacts"
@@ -139,4 +139,11 @@ build_search_index = true
 # author value will be available using {{ config.extra.author }} in templates
 #
 [extra]
-# Put all your custom variables here
+
+[extra.ogp]
+locale = "zh_TW"
+first_name = "Shao-Fu"
+last_name = "Chen"
+gender = "male"
+username = "leo"
+
