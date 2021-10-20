@@ -7,7 +7,6 @@ categories = ["blog"]
 tags = ["blog", "ghost"]
 +++
 
-# 在Ghost中加入程式碼語法標示 (1/2)
 Ghost的預設主題為Casper，是一個外觀優秀、功能普遍齊全的主題。但是對身為程式設計師的使用者來說，經常會需要插入程式碼。雖然Ghost的文章是以Markdown撰寫的，可以快速插入一個程式碼區塊，但在這個區塊中，卻沒有語法高亮標示...
 
 現在在網路上有許多許多提供這類功能的Javascript Library，像是
