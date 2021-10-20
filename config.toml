@@ -145,6 +145,9 @@ papaya_menu_links = [
     { url = "$BASE_URL/about/", name = "About" }
 ]
 
+[extra.images]
+max_width = 3200
+
 [extra.ogp]
 locale = "zh_TW"
 first_name = "Shao-Fu"
