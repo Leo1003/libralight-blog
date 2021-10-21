@@ -8,7 +8,7 @@ jobs:
         with:
           submodules: recursive
       - name: Build blog pages
-        uses: leo1003/zola-build@v0.0.3
+        uses: leo1003/zola-build@v0.0.4
       - name: Deploy blog
         env:
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
