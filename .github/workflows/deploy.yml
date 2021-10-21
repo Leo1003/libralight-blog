@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build blog pages
-        uses: leo1003/zola-build@v0.0.2
+        uses: leo1003/zola-build@v0.0.3
       - name: Deploy blog
         env:
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
