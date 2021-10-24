@@ -1,2 +1,5 @@
 # Output directory
 /artifacts/
+
+# Processed Images
+/static/processed_images
