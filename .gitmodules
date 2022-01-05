@@ -4,3 +4,6 @@
 [submodule "themes/papaya"]
 	path = themes/papaya
 	url = https://github.com/justint/papaya
+[submodule "themes/zola-casper"]
+	path = themes/zola-casper
+	url = https://github.com/Leo1003/zola-casper

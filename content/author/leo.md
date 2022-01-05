@@ -1,10 +1,11 @@
 +++
-title = "About"
-path = "about"
-template = "about.html"
+title = "Leo Chen"
+
+[extra]
+profile_image="@/author/avatar.jpg"
 +++
 
-{{ img(path="@/pages/about/avatar.jpg", class="bordered", alt="Avatar") }}
+{{ img(path="@/author/avatar.jpg", class="bordered", alt="Avatar") }}
 
 &nbsp;
 

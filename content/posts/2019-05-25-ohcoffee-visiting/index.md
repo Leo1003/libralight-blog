@@ -18,5 +18,5 @@ tags = ["coffee"]
 (封面圖是店長的傑作，因為比較好看所以放封面XD)
 
 看來距離自己拉出愛心的距離還很遙遠呢...😶
-{{ img(path="blog/2019-05-25-ohcoffee-visiting/ohcoffee-visiting-1.jpg") }}
+{{ img(path="posts/2019-05-25-ohcoffee-visiting/ohcoffee-visiting-1.jpg") }}
 封面騙人法(1/1)
