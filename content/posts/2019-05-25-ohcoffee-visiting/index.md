@@ -8,9 +8,7 @@ categories = ["coffee"]
 tags = ["coffee"]
 
 [extra]
-# This theme has issues, cannot detect the path correctly
-#featured_image = "@/content/blog/2019-05-25-ohcoffee-visiting/ohcoffee-visiting-header.jpg"
-#featured_image_extended = true
+cover_image = "@/posts/2019-05-25-ohcoffee-visiting/ohcoffee-visiting-header.jpg"
 +++
 
 這次是第二次到握咖啡店訪了，雖然繼上學期的店訪之後，又經過了許多對咖啡的研究及練習。不過，在拉花這塊還是極度不熟悉(廢話，平常根本沒在練習...😒)，有店長幫忙就成功，自己弄就失敗了...(失敗的圖就不放了😕)
